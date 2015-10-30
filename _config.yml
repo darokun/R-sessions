@@ -54,7 +54,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : false
+  BASE_PATH : https://darokun.github.io/R-sessions
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
@@ -110,7 +110,7 @@ JB :
     mixpanel :
         token : '_MIXPANEL_TOKEN_'
     piwik :
-        baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
+        baseURL : '' # Piwik installation address (without protocol)
         idsite : '1'                   # the id of the site on Piwik
 
   # Settings for sharing helper. 
