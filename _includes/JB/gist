@@ -7,7 +7,7 @@ Usage:
   example:
     <ul>
   	  {% include JB/gist gist_id="fdcfeaba4f33c172828d" %}
-  	  {% include JB/gist gist_id="fdcfeaba4f33c172828d" gist_file="jekyll-bootstrap.js" %}
+  	  {% include JB/gist gist_id="fdcfeaba4f33c172828d" gist_file="jb.js" %}
   	</ul>
 -->{% endcomment %}
 

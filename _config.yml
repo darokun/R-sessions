@@ -8,6 +8,7 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
+
 title : R-sessions WS15/16
 tagline: MSc. Epi and PhD-CIH Programs - LMU München
 author :
@@ -15,7 +16,8 @@ author :
   email : daloharodriguez@gmail.com
   github : darokun
   twitter : darokun
-  feedburner : feedname
+  feedburner : r-sessions
+
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -56,6 +58,7 @@ JB :
   #     This means always setting the protocol (http|https) or prefixing with "/"
   BASE_PATH : https://darokun.github.io/R-sessions
 
+
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
   #
@@ -82,7 +85,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : r-sessions
     livefyre :
       site_id : 123
     intensedebate :
@@ -93,7 +96,7 @@ JB :
       width: 580
       colorscheme: light
     duoshuo :
-      short_name : jekyllbootstrap
+      short_name : r-sessions
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
@@ -132,3 +135,6 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+  # Adding gems:
+  gems:
+    - jekyll-mentions
