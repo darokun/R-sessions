@@ -9,14 +9,14 @@ tags : [RStudio session, workflow]
 ## Booleans and George Boole's 200th Birthday!
 Booleans are vectors in R and other programming languages, which can take the logical form `TRUE` or `FALSE`. For example, let's compare the numbers `24` and `100`, as we did in slide 22 of [R course - Lecture 1](http://www.en.msc-epidemiologie.med.uni-muenchen.de/download/winter-term-15__6/quantitave-methods/r-course/r-course_lecture_1_intro.pdf):
 
-1. We create a numerical vector of length one (because there is only one element in it), called `x`, which has the value `24`:
+We create a numerical vector of length one (because there is only one element in it), called `x`, which has the value `24`:
 
 
 ```
 x <- 24
 ```
 
-2. We compare `x` (whose value is `24`) against another value... let's say, `100`:
+We compare `x` (whose value is `24`) against another value... let's say, `100`:
 
 * Hey R, is `x` greater than `100`?
 
