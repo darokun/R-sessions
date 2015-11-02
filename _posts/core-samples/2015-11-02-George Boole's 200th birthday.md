@@ -2,7 +2,7 @@
 layout: post
 category : updates
 tagline: "Supporting tagline"
-tags : [RStudio session, workflow]
+tags : [booleans, George Boole's 200th birthday, google, doodle, computer science, programming, logical vectors]
 ---
 {% include JB/setup %}
 
