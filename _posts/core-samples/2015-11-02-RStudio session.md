@@ -17,9 +17,9 @@ When you open RStudio, you may see a screen similar to this one:
 
 There are at least 3 subscreens:
 
-* Left: the Environment/History subscreen
-* Upper Right hand side: The Console subscreen.
-* Bottom Right hand side: The Files/Plots/Packages/Help/Viewer subscreen.
+* **Left**: the Environment/History subscreen
+* **Upper Right hand side**: The Console subscreen.
+* **Bottom Right hand side**: The Files/Plots/Packages/Help/Viewer subscreen.
 
 Perhaps these subscreens have a different arrangement in your computer. We'll learn how to configure the position of these subscreens in a future post.
 
@@ -28,19 +28,19 @@ In order to open it, you may do one of these:
 
 * Go to the File Menu > New File > R Script: ![Open R Script from File Menu](https://40.media.tumblr.com/b932bac57512f8595862f808130c0138/tumblr_nx6y2bMVKN1qahqiuo3_1280.png)
 
-* Click on the white sheet icon with a green plus sign located at the upper left corner of RStudio, and choose R Script: ![Open R Script from button](https://36.media.tumblr.com/c145730ea80f7ddcae0de7b98b38777e/tumblr_nx6y2bMVKN1qahqiuo2_400.png)
+* Click on the white sheet icon with a green plus sign located at the upper left corner of RStudio, and choose R Script: ![Open R Script from button](https://36.media.tumblr.com/c145730ea80f7ddcae0de7b98b38777e/tumblr_nx6y2bMVKN1qahqiuo2_1280.png)
 
-* Press shift+Cmd+n on Mac, or ctrl+shift+n on Mac and Windows.
+* Press `shift+Cmd+n` on Mac, or `ctrl+shift+n` on Mac and Windows.
 
 Once you have opened your R Script subscreen, your RStudio session might look similar to this:
 ![RStudio with R Script subscreen](https://40.media.tumblr.com/1a899c362fcafa8260d0dc064f35942a/tumblr_nx6y2bMVKN1qahqiuo1_1280.png)
 
 
 ## Getting started
-The first step I recommend when using RStudio is to use R Scripts to write, edit and store all of your code. 
+The first step I recommend when using RStudio is to **use R Scripts to write, edit and store all of your code**. 
 You may write anything you want in this script file, and RStudio will ignore it until you run that line of code.
 
-The second step I always recommend to do, is to tell R and RStudio where to look for files in your own computer. This process is called "Setting the Working Directory", and we can use the function `setwd()`. In order to do this, you may want to use a similar line of code to this one when working from the computers in Kursraum 5:
+The second step I always recommend to do, is to **tell R and RStudio where to look for files in your own computer**. This process is called "Setting the Working Directory", and we can use the function `setwd()`. In order to do this, you may want to use a similar line of code to this one when working from the computers in Kursraum 5:
 
 ```
 setwd("/usr281/ben/msc15xx/rest_of_your_path")
@@ -50,7 +50,7 @@ Where:
 
 * `setwd()` is the 'set working directory' function, 
 
-* `msc15xx` is your personal msc number (write `phd15xx` if you're a PhD-CIH student, and replace the last two x's by your own number), 
+* `msc15xx` is your personal msc number (write `phd15xx` if you're a PhD-CIH student, and replace the last two x's with your own number), 
 
 * and `rest_of_your_path` refers to all the folders and subfolders that you have before getting to the one where your data are located at.
 
@@ -73,7 +73,10 @@ setwd("c:/docs/mydir")
 
 And, as usual, **be sure to change all of your folders according to your own computer's architecture and configuration!!!**.
 
-In order to run a command such as `setwd()`, you can either go to the Run button located in the upper right corner of the R Script subscreen, or press cmd+Enter on a mac (or ctrl+Enter on Windows):
+
+## Run commands
+
+In order to run a command such as `setwd()`, you can either go to the Run button located in the upper right corner of the R Script subscreen, or press `cmd+Enter` on a mac (or `ctrl+Enter` on Windows):
 ![Run Commands](https://41.media.tumblr.com/e67f2292e3d9316eb1e906b9eae2bc6d/tumblr_nx712qMrvb1qahqiuo1_1280.png)
 Every command you run from the R Script subscreen will appear in the Console subscreen, along with any output from R. If R doesn't do anything (no errors, no warnings, no nothing), it means it worked but the command you used has no output.
 
@@ -87,8 +90,8 @@ dir()
 and it should return something like:
 
 ```
-> dir()
 [1] "nhanesdataset_a.tsv" "nhanesdataset_b.tsv" "nhanesdataset_c.tsv"
+
 [4] "nhanesdataset_d.tsv" "nhanesdataset_e.tsv"
 ```
 
@@ -121,7 +124,7 @@ Once you're done working on RStudio, you should save your R Script to store all 
 To save, just go to File > Save, and choose a name for your file:
 ![Save R Script](https://41.media.tumblr.com/be545993cf8a426ec4e8600b31bf0b37/tumblr_nx70u8oovB1qahqiuo1_1280.png)
 
-Alternatively, you can also press cmd+s on mac or ctrl+s on windows. 
+Alternatively, you can also press `cmd+s` on mac or `ctrl+s` on windows. 
 Next time you open RStudio, you only need to run these lines of code again, without having to type your working directory path and everything.
 
 ## Concluding remarks
