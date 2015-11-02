@@ -2,7 +2,7 @@
 layout: post
 category : updates
 tagline: "Supporting tagline"
-tags : [welcome, installing R, installing RStudio]
+tags : [workflow]
 ---
 {% include JB/setup %}
 
