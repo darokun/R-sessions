@@ -14,30 +14,23 @@ These examples assume that you have already set your working directory using `se
 ### 1. Using logical operators.
 This is the way that Riccardo and Vindi showed on class, and the one that they recommend. The nice thing about this approach is that is very straightforward: if you understand the logic of "greater-than" and "smaller-than", is very easy to come up with this solution. Plus, you'd get to practice using R's subsetting and logical operators. From my point of view, the main disadvantage about this method is having to type too much.
 
-```r
+{% highlight r %}
 age.cat1 <- NULL                          # I create a new empty vector called age.cat1
-
 age.cat1[age >= 20 & age <= 34] <- 1      # I set the first age level to be between 20 and 34
-
 age.cat1[age >= 35 & age <= 49] <- 2      # Second level: 35-49
-
 age.cat1[age >= 50 & age <= 64] <- 3      # Third level: 50-64
-
 age.cat1[age >= 65 & age <= 79] <- 4      # Fourth level: 65-79
-
 age.cat1[age >= 80] <-5                   # Fifth level: more than 80
-
 age.cat1 <- as.factor(age.cat1)           # I convert age.cat1 into a factor
-
 tab$age.cat1 <- age.cat1                  # I add age.cat1 to my dataset as tab$age.cat1
-
 summary(age.cat1)                         # check variable
+{% endhighlight %}
 
-```
-```
+{% highlight text %}
 ##   1   2   3   4   5 
 ## 761 800 786 556 206
-```
+{% endhighlight %}
+
 As you can see, most of the subjects are included in levels 2, 3 and 1, respectively and in decreasing order. The group with less subjects is number 5.
 
 ---
