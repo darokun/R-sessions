@@ -15,7 +15,7 @@ All of the formulas we use from now on can be graphically understood by looking 
 \
 
 
-![](./ManualEstimationOfCI_files/figure-html/unnamed-chunk-1-1.png) 
+![CI1](https://raw.githubusercontent.com/darokun/R-sessions/gh-pages/_posts/core-samples/ManualEstimationOfCI_files/figure-html/unnamed-chunk-1-1.png) 
 
 
 ### With known variance
@@ -118,7 +118,7 @@ mean.x
 
 For the unknown variance the procedure is pretty much the same, except that now we want to use the Student's t distribution because we need to take into account **extra uncertainty** from the fact that **we don't know** what the variance is:
 
-![](./ManualEstimationOfCI_files/figure-html/unnamed-chunk-4-1.png) 
+![CI2](https://raw.githubusercontent.com/darokun/R-sessions/gh-pages/_posts/core-samples/ManualEstimationOfCI_files/figure-html/unnamed-chunk-4-1.png) 
 
 See how the red line leaves more space near the extremes? This is the t-distribution accounting for uncertainty against the normal distribution (the black line).
 
