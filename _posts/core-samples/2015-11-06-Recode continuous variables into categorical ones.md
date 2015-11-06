@@ -68,7 +68,8 @@ library(car) #Load car package for using function recode
 # use recode() to recode the age variable into 5 categories with 
 # desired cut-off points, make it a factor, and add it to my data set 
 # as tab$age.cat3:
-tab$age.cat3 <- recode(age, "20:34='1'; 35:49='2'; 50:64='3'; 65:79='4'; 80:Inf='5' ", as.factor=T)
+tab$age.cat3 <- recode(age, "20:34='1'; 35:49='2'; 50:64='3'; 
+                65:79='4'; 80:Inf='5' ", as.factor=T)
 
 # check variable:
 summary(tab$age.cat3)
@@ -86,7 +87,7 @@ Once again, results should be the same as with methods 1 and 2.
 Some of you may already have experience with other statistical packages and programming languages, and might understand better by using `if else` statements. The thing about R is that you need to use its proper syntax, and you may need to use a `for` loop when trying to use an `if` (and optionally `else`) statement. There are many ways to do this, but one of the ways I've come up with is:
 
 {% highlight r %}
-age.cat4 <- NULL # create variable
+age.cat4 <- NULL                                      # create variable
 
 for(i in 1:nrow(tab)) {                               # start for loop
   if(age[i] >= 20 & age[i] <= 34) age.cat4[i] <- 1    # first level
