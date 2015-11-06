@@ -45,9 +45,11 @@ There are a lot of resources out there on the web to learn and practice R on you
 * [DataCamp](https://www.datacamp.com/): Nice (and free!) courses on R, Programming and Data Science.
 * [Swirl](http://swirlstats.com/): We're using this package during the R-sessions in order to interactively learn R, from within R. To install swirl, you only need to type these three lines in R, and then follow the instructions:
 
-`install.packages("swirl")`    
-`library(swirl)`    
-`swirl()`    
+{% highlight r %}
+install.packages("swirl")    
+library(swirl)  
+swirl()
+{% endhighlight %}
  
 
 --- 
@@ -57,7 +59,7 @@ I invite you all once again to the **R-sessions** (optional).
 
 **What**: R-sessions.    
 **When**: Saturdays, 11am-2pm.    
-**Where**: KR5 (The computer lab at Klinikum Großhadern).    
+**Where**: KR5 (The computer lab at Klinikum Gro??hadern).    
 
 Last week we used swirl together, but this week we'll do more independent work. You're free to do this week's exercises, work on swirl or any of the other resources, or just explore R on your own. I'll be there to assist you all and clear up any questions you may have. Bring your own laptops if you want!
 

@@ -42,9 +42,9 @@ You may write anything you want in this script file, and RStudio will ignore it 
 
 The second step I always recommend to do, is to **tell R and RStudio where to look for files in your own computer**. This process is called "Setting the Working Directory", and we can use the function `setwd()`. In order to do this, you may want to use a similar line of code to this one when working from the computers in Kursraum 5:
 
-```
+{% highlight r %}
 setwd("/usr281/ben/msc15xx/rest_of_your_path")
-```
+{% endhighlight %}
 
 Where:
 
@@ -59,17 +59,17 @@ Where:
 
 If you're working on a mac computer, your path might look something like this:
 
-```
+{% highlight r %}
 setwd("~/Documents/rest_of_your_folders")
-```
+{% endhighlight %}
 
 Where `~` represents your User name (you don't need to write your name, the `~` sign is enough), and `Documents` could be some other folder (like your `Desktop`, `Dropbox` folder, etc.).
 
 If you're working on Windows, the path might look like this:
 
-```
+{% highlight r %}
 setwd("c:/docs/mydir")
-```
+{% endhighlight %}
 
 And, as usual, **be sure to change all of your folders according to your own computer's architecture and configuration!!!**.
 
@@ -83,30 +83,30 @@ Every command you run from the R Script subscreen will appear in the Console sub
 ## Loading data
 Once, you've set up your working directory, you can ask R to see which files are there in your working directory, just to make sure that your data files are there. If you run the `dir()` function, you're asking R to tell you which files are in your *dir*ectory:
 
-```
+{% highlight r %}
 dir()
-```
+{% endhighlight %}
 
 and it should return something like:
 
-```
+{% highlight text %}
 [1] "nhanesdataset_a.tsv" "nhanesdataset_b.tsv" "nhanesdataset_c.tsv"
 [4] "nhanesdataset_d.tsv" "nhanesdataset_e.tsv"
-```
+{% endhighlight %}
 
 You could have more files, but at least your data set files should be in there. If they are not, or if you get any errors, repeat setting the working directory and **make sure you're using the right path to the folder where your data set files are!**
 
 Then, you're ready to read-in your data, using the `read.table()` function. Use a code similar to the one we learned in the [R course - Lecture 2](http://www.en.msc-epidemiologie.med.uni-muenchen.de/download/winter-term-15__6/quantitave-methods/r-course/r-course_l2_datasets_plots.pdf):
 
-```
+{% highlight r %}
 tab <- read.table("nhanesdataset_a.tsv", sep="\t", header=TRUE)
-```
+{% endhighlight %}
 
 To find out more about the `read.table()` function, you could go to its help page by typing:
 
-```
+{% highlight r %}
 ?read.table
-```
+{% endhighlight %}
 
 ## Work on your data
 Now you're finally set to start analyzing your data!

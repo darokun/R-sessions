@@ -12,41 +12,49 @@ Booleans are vectors in R and other programming languages, which can take the lo
 We create a numerical vector of length one (because there is only one element in it), called `x`, which has the value `24`:
 
 
-```
+{% highlight r %}
 x <- 24
-```
+{% endhighlight %}
 
 We compare `x` (whose value is `24`) against another value... let's say, `100`:
 
 * Hey R, is `x` greater than `100`?
 
-```
+{% highlight r %}
 x > 100
+{% endhighlight %}
+{% highlight text %}
 [1] FALSE 
-```
+{% endhighlight %}
 
 R says it's `FALSE` because `24` is **not** greater than `100`.
 
 * Is `x` smaller than `100`?
 
-```
+{% highlight r %}
 x < 100
+{% endhighlight %}
+{% highlight text %}
 [1] TRUE
-```
+{% endhighlight %}
 
 * Is `x` **not equal to** `100`? (In R, '**not equal to**' is written with an exclamation mark followed by an equal sign):
 
-```
+{% highlight r %}
 x != 100
+{% endhighlight %}
+{% highlight text %}
 [1] TRUE
-```
+{% endhighlight %}
 
 * Is `x` **exactly equal to** `100`? (In R, '**exactly equal to**' is written with two equal signs):
 
-```
+{% highlight r %}
 x == 100
+{% endhighlight %}
+{% highlight text %}
 [1] FALSE
-```
+{% endhighlight %}
 
 ---
 
