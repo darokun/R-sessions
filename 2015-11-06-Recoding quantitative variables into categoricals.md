@@ -6,7 +6,7 @@ tags : [recoding, types of variables]
 ---
 {% include JB/setup %}
 
-# Recode continous variables into categories:
+# Recode continous variables into several categories:
 So, I've noticed that some of you have had a hard time trying to recode the continuous variable age into a categorical one. However, I have seen some nice approaches, and would like to provide a summary of at least four possible ways in which you could tackle this problem. I have named the resulting variable from each method `age.cat` + the number corresponding to each method (either 1, 2, 3 or 4).  
 
 These examples assume that you have already set your working directory using `setwd()`, that you have read in your data using `read.table()`, and that you have attached your data using `attach()`. I will be using `nhanesdataset_a.tsv` for the examples, but you may use whichever you like the most.
