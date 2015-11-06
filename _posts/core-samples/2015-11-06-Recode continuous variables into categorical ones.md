@@ -35,7 +35,7 @@ As you can see, most of the subjects are included in levels 2, 3 and 1, respecti
 
 ---
 
-### 2. Using the function cut():
+### 2. Using the function `cut()`:
 The function `cut()` literally 'cuts' the continuous variable at specific cut-off points (determined by you!), and adds the amount of subjects in each resulting level to a new variable that we then convert to a factor. In this example I have also set an `age.labels` character vector, to tell `cut()` what's the name of my new levels, in a way that makes sense to a human. The advantages of this method are that it doesn't require too much typing and that the code is easy to read. The main disadvantage is that if you don't know how the function `cut()` works, the reader may not understand what's going on. If you want to learn more about this function, you may use the help by typing `?cut`. This is the example:
 
 {% highlight r %}
@@ -58,7 +58,7 @@ As you may notice, the amount of subjects per level is exactly the same as the o
 
 ---
 
-### 3. Using the function recode():
+### 3. Using the function `recode()`:
 Since the exercise actually says the word "recode", I found a function that does exactly that: takes values in a continuous variable and recodes them into levels of a categorical variable. The `recode()` function is included in the car package, so you need to install and load this package before trying to use the `recode()` function. The advantages and disadvantages are similar to using `cut()`, but the fact that you actually need to install and load a package makes it less friendly. Plus, I think that the way you specify the levels is not as straightforward as with other methods. As usual, for more info about this function, you may type `?recode` or `??recode` into R.
 
 {% highlight r %}
@@ -83,7 +83,7 @@ Once again, results should be the same as with methods 1 and 2.
 
 ---
 
-### 4. Using for loops and if statements:
+### 4. Using `for` loops and `if` statements:
 Some of you may already have experience with other statistical packages and programming languages, and might understand better by using `if else` statements. The thing about R is that you need to use its proper syntax, and you may need to use a `for` loop when trying to use an `if` (and optionally `else`) statement. There are many ways to do this, but one of the ways I've come up with is:
 
 {% highlight r %}
