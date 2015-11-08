@@ -7,4 +7,4 @@ This is a site dedicated to the optional R-sessions offered as part of the curri
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT)
+[MIT](https://github.com/darokun/R-sessions/blob/gh-pages/LICENSE)
